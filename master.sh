@@ -1,5 +1,7 @@
 #MERGE ALL TXT
 #cat *.txt > all.txt (no newline bw files)
+rm -rf out
+rm -rf final
 mkdir out
 find *.txt -exec cat {} \; -exec echo \; > 'out/all.txt'
 #REPLACE , WITH \n
